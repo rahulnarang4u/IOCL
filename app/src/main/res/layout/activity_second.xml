@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_view_result"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+           />
+
+        <EditText
+            android:id="@+id/sapcode"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/enter_sap_code"
+            android:inputType="numberPassword"
+            android:scaleType="fitStart"
+            tools:targetApi="o" />
+
+
+
+
+        <EditText
+            android:id="@+id/vsat_ip"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sapcode"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:autofillHints=""
+            android:hint="@string/vsat_ip"
+            android:inputType="textPassword"
+            android:scaleType="fitStart"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vsat_ip"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:hint="@string/enter_your_name"
+            android:inputType="textPersonName"
+            android:scaleType="fitStart"
+            tools:targetApi="o"
+            android:autofillHints="" />
+        <EditText
+            android:id="@+id/priority"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:hint="@string/priority"
+            android:inputType="textPersonName"
+            android:scaleType="fitStart"
+            tools:targetApi="o"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/remarks"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priority"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:hint="@string/remarks"
+            android:inputType="textPersonName"
+            android:scaleType="fitStart"
+            tools:targetApi="o"
+            android:autofillHints="" />
+
+
+        <Spinner
+            android:id="@+id/type"
+            android:layout_width="278dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/remarks"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            tools:layout_editor_absoluteY="455dp" />
+
+        <Spinner
+            android:id="@+id/d_office"
+            android:layout_width="278dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/type"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart" />
+
+        <Spinner
+            android:id="@+id/issue"
+            android:layout_width="278dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/d_office"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart" />
+
+
+        <Spinner
+
+            android:id="@+id/auto_vendor"
+            android:layout_width="278dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/issue"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart" />
+
+        <Spinner
+
+            android:id="@+id/vsat_vendor"
+            android:layout_width="278dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/auto_vendor"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/vsat_vendor"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:text="@string/save" />
+
+
+
+        <Button
+            android:id="@+id/summarize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="25dp"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/btn_submit"
+            android:text="@string/data" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Complaint Lodging</string>
+    <string name="password1">Password</string>
+    <string name="login">login</string>
+    <string name="enter_sap_code">Enter SAP Code</string>
+    <string name="no_of_attempts_remaining1">No of attempts remaining:</string>
+    <string name="save">Save</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="remarks">Remarks</string>
+    <string name="vsat_ip">Vsat IP</string>
+    <string name="priority">priority:</string>
+    <string name="parse">parse</string>
+    <string name="complaint_no">Complaint No:</string>
+    <string name="data">data</string>
+    <string name="logout">Logout</string>
+    <string-array name="Type">
+        <item> Choose Type </item>
+        <item> Dealer</item>
+        <item> IOCL</item>
+        <item> Field Officer</item>
+
+    </string-array>
+    <string-array name="D_office">\
+        <item> Select Divisional Office</item>
+        <item> Noida</item>
+        <item> Muradabad </item>
+        <item>  Bareilly</item>
+        <item> Dehradun</item>
+        <item> Agra</item>
+
+
+    </string-array>
+    <string-array name="auto_vendor">
+        <item> Select Auto Vendor Name</item>
+        <item> Orpak</item>
+        <item> Atos</item>
+
+    </string-array>
+    <string-array name="Issue">
+        <item> Select Issue</item>
+        <item> Hardware Failure</item>
+        <item> Automation Related </item>
+        <item> Modem Kept Off</item>
+        <item> Others</item>
+
+    </string-array>
+
+
+<string-array name="vsat_vendor">
+<item> Select  Vsat Vendor Name</item>
+<item> Nelco</item>
+<item> Hughes</item>
+</string-array>
+
+</resources>
