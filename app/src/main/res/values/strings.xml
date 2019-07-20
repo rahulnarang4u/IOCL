@@ -11,6 +11,7 @@
     <string name="priority">priority:</string>
     <string name="parse">parse</string>
     <string name="complaint_no">Complaint No:</string>
+    <string name="Info1">Info1</string>
     <string name="data">data</string>
     <string name="logout">Logout</string>
     <string-array name="Type">

@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
 
        final EditText Password=findViewById(R.id.editText2);
-       TextView Info= findViewById(R.id.textView);
-        Button Login= findViewById(R.id.button);
+        Info= findViewById(R.id.textView);
+        Login= findViewById(R.id.button);
         Info.setText("No of attempts remaining:"+counter);
 
         Login.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         timer = new Timer();
         Log.i("Main", "Invoking logout timer");
         LogOutTimerTask logoutTimeTask = new LogOutTimerTask();
-        timer.schedule(logoutTimeTask, 50); //auto logout in 5 minutes
+        timer.schedule(logoutTimeTask, 50); //auto logout in 5o milliseconds
     }
 
     @Override
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
             counter--;
 
-            Info.setText(String.format("No of attempts remaining: %d", counter));
+            Info.setText("No of attempts remaining: "+counter);
             if(counter==0){
                 Login.setEnabled(false);
             }
