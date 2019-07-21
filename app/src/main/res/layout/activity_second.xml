@@ -59,7 +59,7 @@
             android:adjustViewBounds="true"
             android:autofillHints=""
             android:hint="@string/vsat_ip"
-            android:inputType="textPassword"
+            android:inputType="textPersonName"
             android:scaleType="fitStart"
             tools:targetApi="o" />
 
