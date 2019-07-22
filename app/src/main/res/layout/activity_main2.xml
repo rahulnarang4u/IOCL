@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:onClick="mAdmin"
         android:layout_marginBottom="40dp"
         android:text="@string/parse" />
 

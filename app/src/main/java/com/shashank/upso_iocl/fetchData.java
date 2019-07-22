@@ -28,7 +28,7 @@ public class fetchData extends AsyncTask<Void,Void,Void> {
 
         try {
 
-            URL url = new URL("http://192.168.1.11:5000/complaint");
+            URL url = new URL("http://192.168.43.236:5000/complaint");
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             InputStream inputStream = httpURLConnection.getInputStream();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));

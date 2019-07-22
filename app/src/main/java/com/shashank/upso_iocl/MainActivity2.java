@@ -26,14 +26,20 @@ public class MainActivity2 extends AppCompatActivity {
         click = findViewById(R.id.button_parse);
         data = findViewById(R.id.text_view_result);
 
-        click.setOnClickListener(new View.OnClickListener() {
+       /* click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 com.shashank.upso_iocl.fetchData process = new com.shashank.upso_iocl.fetchData();
                 process.execute();
             }
-        });
+        });*/
 
+    }
+
+    public void mAdmin(View view)
+    {
+        Intent intent = new Intent(MainActivity2.this, admin.class);
+        startActivity(intent);
     }
 
     public void onButtonClick(View v) {

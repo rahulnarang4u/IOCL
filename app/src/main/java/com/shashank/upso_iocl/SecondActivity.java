@@ -120,7 +120,7 @@ public class SecondActivity extends AppCompatActivity {
          RequestQueue requestQueue;
 
         final String savedata= data;
-        String URL="http://192.168.1.11:5000/complaint";
+        String URL="http://192.168.43.236:5000/complaint";
 
         requestQueue = Volley.newRequestQueue(getApplicationContext());
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
