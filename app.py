@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy 
-from flask_marshmallow import Marshmallow 
-import random
+from flask_marshmallow import Marshmallow
+import random 
 import os
 
 # Init app
@@ -15,10 +15,6 @@ db = SQLAlchemy(app)
 # Init ma
 ma = Marshmallow(app)
 
-@app.route('/')
-def home():
-    return 'WELCOME TO UPSO2!'
-	
 # Complaint add
 class Complaint(db.Model):
   complaint_no = db.Column(db.Integer, primary_key=True)
@@ -89,7 +85,7 @@ def get_complaints():
   result = complaints_schema.dump(all_complaints)
   return jsonify(result.data)
 
-# Get single Product
+# Get Product
 @app.route('/complaint/<id>', methods=['GET'])
 def get_complaint(id):
   complaint = Complaint.query.get(id)
